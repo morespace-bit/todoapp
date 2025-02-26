@@ -1,0 +1,131 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todo {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.well {
+  font-size: 1.5rem;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+.list {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.add {
+  position: fixed;
+  bottom: 5rem;
+  right: 10rem;
+  border-style: none;
+}
+button > img {
+  width: 50px;
+  height: 50px;
+}
+
+/* form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+.todoform {
+  /* position: fixed; */
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: azure;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2),
+    -2px -4px 8px rgba(255, 255, 255, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* color: white; */
+  /* background-color: #0056b3; */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+fieldset {
+  margin-top: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.btn3 {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn3:hover {
+  background-color: #0056b3;
+}
+
+.btn3:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .add {
+    bottom: 25px;
+    right: 5px;
+  }
+}
